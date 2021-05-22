@@ -162,6 +162,9 @@ form {
   border-radius: 10px;
   cursor: pointer;
 }
+#error_page {
+  display: none;
+}
 
 @media screen and (max-width: 719px) {
   #container_app {
