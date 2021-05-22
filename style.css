@@ -184,4 +184,16 @@ form {
   #inbox_msgs {
     height: 500px;
   }
+  #error_page {
+    left: 0;
+    top: 0;
+    display: block;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    font-size: 2em;
+    z-index: 10;
+    background-color: blanchedalmond;
+    text-align: center;
+  }
 }
