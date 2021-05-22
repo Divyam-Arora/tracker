@@ -258,8 +258,8 @@ btnSubmit.addEventListener("click", function (e) {
       dose1 = true;
       dose2 = true;
     }
-    // userData = [districtId];
-    userData = [497, 218];
+    userData = [districtId];
+//     userData = [497, 218];
     if (typeof timer === "number") {
       clearTimeout(timer);
     }
