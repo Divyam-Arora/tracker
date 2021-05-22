@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#container_app {
+  min-width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background: linear-gradient(120deg, rgb(235, 235, 182), rgb(0, 0, 0));
+}
+.container_title {
+  padding: 2%;
+  /* padding-top: 5%; */
+  font-size: 3em;
+  font-style: oblique;
+  color: darkslategrey;
+  /* height: 10%; */
+  /* margin-bottom: 2%; */
+  text-align: center;
+}
+.container_block {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+#container_info {
+  background: transparent;
+}
+#container_inbox {
+  background: rgb(204, 204, 204);
+}
+#inbox_msgs {
+  display: flex;
+  flex-direction: column;
+  padding-top: 5%;
+  height: 85%;
+  overflow: auto;
+  border-radius: 30px;
+}
+#inbox_msgs > h1 {
+  text-align: center;
+  font-weight: lighter;
+  display: none;
+}
+.inbox_msg {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: linear-gradient(120deg, rgb(86, 87, 85), rgb(200, 212, 128));
+  border-radius: 30px;
+  /* padding-left: 3%; */
+  margin-bottom: 1%;
+  position: relative;
+  /* height: 100px; */
+}
+.inbox_msg > span {
+  display: inline-block;
+  font-size: 2em;
+  color: yellow;
+  background-color: black;
+  border-radius: 50% 10% 10% 50%;
+  padding: 10px;
+  height: 100%;
+  padding-right: 10px;
+  /* line-height: 190%; */
+}
+.inbox_msg > table {
+  width: 100%;
+  text-align: center;
+  border: 5px solid transparent;
+  font-weight: bolder;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+.select_format {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.format {
+  background-color: white;
+  margin: 2%;
+  padding: 2%;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.current_format {
+  background-color: rgb(104, 104, 38);
+  color: white;
+}
+.format_form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.form {
+  display: none;
+  width: 100%;
+}
+.form > div {
+  margin: 2%;
+}
+.dist_form {
+  /* display: flex; */
+  flex-direction: row;
+  justify-content: center;
+}
+.pin_form {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.pin_form > input {
+  height: 30px;
+  width: 200px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 2%;
+  padding: 1%;
+}
+.state_drop > select,
+.dist_drop > select {
+  height: 30px;
+  width: 200px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.current_form {
+  display: flex;
+}
+.attributes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 2%;
+}
+.attributes > div {
+  background-color: white;
+  padding: 2% 5% 2% 5%;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.selected_atr {
+  background-color: rgb(104, 104, 38) !important;
+  color: white;
+}
+#submit_area {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 2%;
+}
+#submit_area > button {
+  padding: 1% 6% 1% 6%;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 719px) {
+  #container_app {
+    flex-direction: column;
+    height: auto;
+    min-height: 100vh;
+    align-items: stretch;
+    justify-content: space-between;
+  }
+  .dist_form {
+    flex-direction: column;
+  }
+  .state_drop,
+  .dist_drop {
+    text-align: center;
+  }
+  .inbox_msg {
+    font-size: 70%;
+  }
+  #inbox_msgs {
+    height: 500px;
+  }
+}

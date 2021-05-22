@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div id="container_app">
+      <div class="container_block" id="container_info">
+        <h1 class="container_title">Vaccine Slot Tracker</h1>
+        <h5 style="text-align: center">Built by Divyam Arora</h5>
+        <form>
+          <div class="select_format">
+            <div class="format current_format" id="By_district">
+              Select By District
+            </div>
+            <div class="format" id="By_pincode">Select By Pincode</div>
+          </div>
+          <div class="format_form">
+            <div class="form dist_form current_form">
+              <div class="state_drop">
+                <label for="state_dropdown"></label>
+                <select id="state_dropdown" name="state" required>
+                  <option value="default">Select State</option>
+                </select>
+              </div>
+              <div class="dist_drop">
+                <label for="dist_dropdown"></label>
+                <select id="dist_dropdown" name="dist" required>
+                  <option value="default">Select District</option>
+                </select>
+              </div>
+            </div>
+            <div class="form pin_form">
+              <label for="pin_vlaue"> Pincode: </label>
+              <input
+                type="text"
+                id="pin_value"
+                required
+                placeholder="Multiple (space-seperated)"
+              />
+            </div>
+          </div>
+          <div class="attributes">
+            <div class="attr selected_atr">18+</div>
+            <div class="attr">45+</div>
+            <div class="attr selected_atr">Dose 1</div>
+            <div class="attr">Dose 2</div>
+          </div>
+          <div id="submit_area">
+            <button>Notify</button>
+          </div>
+        </form>
+      </div>
+      <div class="container_block" id="container_inbox">
+        <h1 class="container_title">INBOX</h1>
+        <div id="inbox_msgs">
+          <h1>I will notify you as soon as the slots become available!</h1>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
